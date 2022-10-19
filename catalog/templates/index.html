@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Библиотека</h1>
+
+    <p>Сводка:</p>
+    <ul>
+        <li><strong>Книги:</strong> {{ num_books }}</li>
+        <li><strong>Копии:</strong> {{ num_instances }}</li>
+        <li><strong>Доступно:</strong> {{ num_instances_available }}</li>
+        <li><strong>Авторы:</strong> {{ num_authors }}</li>
+    </ul>
+
+
+    <p>Посещений {{ num_visits }}.</p>
+
+{% endblock %}
